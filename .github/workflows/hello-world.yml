@@ -1,0 +1,9 @@
+name: :Hello World"
+on:  "push"
+jobs:
+  build:
+    name: my-builder
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout-code
+        uses: actions/checkout@v3
