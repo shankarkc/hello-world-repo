@@ -1,9 +1,9 @@
 name: :Hello World"
 on:  "push"
 jobs:
-  build:
-    name: my-builder
+  hello-job:
+    name: hello-job
     runs-on: ubuntu-latest
     steps:
-      - name: checkout-code
-        uses: actions/checkout@v3
+      - name: Echo text
+        run: echo "Hello world"
